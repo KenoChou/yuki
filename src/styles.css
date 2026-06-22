@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #FAF8F5;
+    color: #1b1c1a;
+}
+.yuki-shadow {
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.03);
+}
+.yuki-shadow-hover:hover {
+    box-shadow: 0 30px 50px -15px rgba(0, 0, 0, 0.05);
+    transform: translateY(-2px);
+}
+.file-icon-bg { background-color: #F0EDE8; }
+
+.ambient-shadow { box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.03); }
+.hover-lift { transition: transform 0.3s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.3s cubic-bezier(0.2, 0, 0, 1); }
+.hover-lift:hover { transform: translateY(-2px); box-shadow: 0 16px 48px -12px rgba(0, 0, 0, 0.05); }
+
+.custom-folder-icon {
+    width: 48px; height: 40px; background-color: #efeeeb; border-radius: 12px; position: relative;
+}
+.custom-folder-icon::before {
+    content: ''; position: absolute; top: -6px; left: 0; width: 20px; height: 10px; background-color: #efeeeb; border-radius: 8px 8px 0 0;
+}
+
+.bg-bento-pink { background-color: #FDE8E9; }
+.bg-bento-blue { background-color: #E8F4F8; }
+.bg-bento-green { background-color: #EAF4E8; }
+.bg-bento-milktea { background-color: #F3DFCE; }
+.bg-bento-lavender { background-color: #F3E8FD; }
+.bg-bento-yellow { background-color: #FFF6E0; }
+
+.bento-card { transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+.bento-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -10px rgba(0,0,0,0.05); }
+
+.yuki-card {
+    background-color: #FFFFFF; border-radius: 24px; border: 1px solid #F0EDE8; box-shadow: 0px 8px 24px -4px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.yuki-card:hover { transform: translateY(-2px); box-shadow: 0px 12px 40px -4px rgba(0,0,0,0.05); }
+.accent-sky { color: #82C5D9; } .accent-cherry { color: #E8A3B9; } .accent-matcha { color: #A5B891; } .accent-lavender { color: #B3A4C8; }
+.bg-sky-light { background-color: rgba(130, 197, 217, 0.1); } .bg-cherry-light { background-color: rgba(232, 163, 185, 0.1); } .bg-matcha-light { background-color: rgba(165, 184, 145, 0.1); } .bg-lavender-light { background-color: rgba(179, 164, 200, 0.1); }
